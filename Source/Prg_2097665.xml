@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14050.00"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="- Edit account" ISN_2="1" LastIsn="1" id="2097665">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr/>
+            <TSK_PARAMS val="1"/>
+            <ParametersAttributes>
+              <Attr MgAttr="A"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <PARALLEL_EXECUTION>
+            <INITIATE_MAIN_PROG val="Y"/>
+            <COPY_GLOBAL_PARAMS val="Y"/>
+            <SingleInstance val="N"/>
+          </PARALLEL_EXECUTION>
+          <SqlWhereExist val="N"/>
+          <TaskType val="O"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="N"/>
+          <DotNetObjectExists val="N"/>
+          <ToBeMigrated val="Y"/>
+          <LastModified _date="734132" _time="56264" date="26/12/2010" time="15:37:44"/>
+        </Header>
+        <ItemIsn val="7"/>
+        <Resource>
+          <Columns>
+            <Column id="2097153" name="piAccount to edit">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="20"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="2097154" name="Field 1">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="20"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="2097155" name="Field 2">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="20"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="2097156" name="Field 3">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="20"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="20"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="2097157" name="Lock result">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="2N"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192" val="Y"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="2097158" name="Unlock result">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="2N"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192" val="Y"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="2097159" name="Allow edit?">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition Exp="2097159"/>
+          <EvaluateEndCondition val="B"/>
+          <InitialMode val="M"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="R"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="D"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="D"/>
+            <TransactionBegin val="P"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="Y"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="Y"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="Y"/>
+            <AllowCreate val="Y"/>
+            <AllowDelete val="Y"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="Y"/>
+            <AllowSorting val="Y"/>
+            <AllowIOFiles val="Y"/>
+            <RecordCycle val="Y"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="Y"/>
+            <AllowLocationInQuery val="Y"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="Y"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="2097154" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="2097154" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2097153" FlowIsn="2097155" id="2097153">
+                  <Column val="2097153"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <INT_DSP_INFO>
+                    <v>0</v>
+                  </INT_DSP_INFO>
+                  <_DitIndexForToolkit val="2"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097156">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2097154" FlowIsn="2097157" id="2097154">
+                  <Column val="2097154"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="4"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2097155" FlowIsn="2097158" id="2097155">
+                  <Column val="2097155"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="6"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2097156" FlowIsn="2097159" id="2097156">
+                  <Column val="2097156"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <_DitIndexForToolkit val="8"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097160">
+                  <Type val="0"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2097157" FlowIsn="2097161" id="2097157">
+                  <Column val="2097157"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2097158" FlowIsn="2097162" id="2097158">
+                  <Column val="2097158"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="2097159" FlowIsn="2097163" id="2097159">
+                  <Column val="2097159"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="2097155" propagate="78">
+            <Level val="T"/>
+            <Type val="P"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Remark FlowIsn="2097164">
+                  <Type val="2"/>
+                  <Text val="Try to lock this account#. Wait 3 seconds if it is locked."/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="2097165">
+                  <FieldID val="2097157"/>
+                  <WithValue val="2097154"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097166">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="2097180" EndBlockSegment="2097171" FlowIsn="2097167" Type="I">
+                  <Condition Exp="2097155"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097168">
+                  <Type val="2"/>
+                  <Text val="If the lock worked, the user can edit this account."/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="2097169">
+                  <FieldID val="2097159"/>
+                  <WithValue val="2097153"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097170">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="2097180" EndBlockSegment="2097177" FlowIsn="2097171" Type="E">
+                  <Condition Exp="2097156"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097172">
+                  <Type val="2"/>
+                  <Text val="It was already locked by this user. Unlock it (so we don't have two locks) but"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097173">
+                  <Type val="2"/>
+                  <Text val="don't allow editing."/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="2097174">
+                  <FieldID val="2097158"/>
+                  <WithValue val="2097158"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="2097175" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Sorry, you have this account open in another window." TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097176">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="2097180" EndBlockSegment="2097180" FlowIsn="2097177" Type="E">
+                  <Condition Exp="2097157"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="2097178" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Sorry, someone else is working on this account right now." TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097179">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="2097180"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="2097181">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="2097156" propagate="89">
+            <Level val="H"/>
+            <Type val="U"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="I"/>
+              <InternalEventID val="13"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <LogicLines>
+              <LogicLine>
+                <Remark FlowIsn="2097182">
+                  <Type val="2"/>
+                  <Text val="User is done; unlock the account"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="2097183">
+                  <FieldID val="2097158"/>
+                  <WithValue val="2097158"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry _last_isn="8" _last_test_id="8" id="1">
+            <PropertyList model="FORM_GUI0">
+              <X Exp="2097160" id="21" val="1"/>
+              <Y id="22" val="163"/>
+              <Width id="23" val="193"/>
+              <Height id="24" val="87"/>
+              <ShowGrid id="37"/>
+              <GridX id="38" val="2"/>
+              <GridY id="39" val="2"/>
+              <_Comment id="218"/>
+              <FormName id="311" valUnicode="Edit account"/>
+              <PersistentFormState id="493"/>
+            </PropertyList>
+            <Control _test_id="8" id="2097153">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Account:"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="9"/>
+                <Width id="23" val="39"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <HorizontalAlignment id="65" val="3"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="7" id="2097154">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="2097153"/>
+                </Model>
+                <X id="21" val="56"/>
+                <Y id="22" val="9"/>
+                <Width id="23" val="105"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="2097153" id="43"/>
+                <ControlName id="46" val="piAccount to edit"/>
+                <Color id="51" val="5"/>
+                <Modifiable id="53"/>
+                <Style id="63" val="1"/>
+                <_Orientation id="143"/>
+                <TabInto id="269"/>
+                <TabOrder id="314" val="1"/>
+                <Border id="452"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="2" id="2097155">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Field 1:"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="31"/>
+                <Width id="23" val="39"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <HorizontalAlignment id="65" val="3"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="1" id="2097156">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="2097154"/>
+                </Model>
+                <X id="21" val="56"/>
+                <Y id="22" val="31"/>
+                <Width id="23" val="105"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="2097154" id="43"/>
+                <ControlName id="46" val="Field 1"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="4" id="2097157">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Field 2:"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="44"/>
+                <Width id="23" val="39"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <HorizontalAlignment id="65" val="3"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="3" id="2097158">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="2097155"/>
+                </Model>
+                <X id="21" val="56"/>
+                <Y id="22" val="44"/>
+                <Width id="23" val="105"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="2097155" id="43"/>
+                <ControlName id="46" val="Field 2"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="3"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="6" id="2097159">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="Field 3:"/>
+                <X id="21" val="12"/>
+                <Y id="22" val="57"/>
+                <Width id="23" val="39"/>
+                <Height id="24" val="10"/>
+                <Font id="50" val="1"/>
+                <Style id="63" val="7"/>
+                <HorizontalAlignment id="65" val="3"/>
+                <_VerticalScroll id="73"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="5" id="2097160">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="2097156"/>
+                </Model>
+                <X id="21" val="56"/>
+                <Y id="22" val="57"/>
+                <Width id="23" val="105"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="2097156" id="43"/>
+                <ControlName id="46" val="Field 3"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="4"/>
+              </PropertyList>
+            </Control>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="2097153">
+            <ExpSyntax val="'TRUE'LOG"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="2097154">
+            <ExpSyntax val="Lock(Trim({0,2097153}),3)"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="2097155">
+            <ExpSyntax val="{0,2097157}=0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="2097156">
+            <ExpSyntax val="{0,2097157}=1"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="2097157">
+            <ExpSyntax val="{0,2097157}=2"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="2097158">
+            <ExpSyntax val="UnLock(Trim({0,2097153}))"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="2097159">
+            <ExpSyntax val="NOT {0,2097159}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="2097160">
+            <ExpSyntax val="Val(Left({0,2097153},2),'2')"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+        </Expressions>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>
